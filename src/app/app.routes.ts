@@ -4,19 +4,19 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () =>
-      import('./orders/orders.component').then((m) => m.OrdersComponent),
+      import('./components/orders/orders.component').then((m) => m.OrdersComponent),
   },
   {
     path: 'in-progress',
     loadComponent: () =>
-      import('./in-progress/in-progress.component').then(
+      import('./components/in-progress/in-progress.component').then(
         (m) => m.InProgressComponent
       ),
   },
   {
     path: 'completed',
     loadComponent: () =>
-      import('./completed/completed.component').then(
+      import('./components/completed/completed.component').then(
         (m) => m.CompletedComponent
       ),
   },

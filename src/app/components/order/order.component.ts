@@ -6,7 +6,7 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatChipsModule } from '@angular/material/chips';
-import { Order } from '../interface/order.interface';
+import { Order } from '../../interface/order.interface';
 
 @Component({
   selector: 'app-order',

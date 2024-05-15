@@ -6,8 +6,8 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { MatCardModule } from '@angular/material/card';
-import { OrderService } from '../services/order.service';
-import { Order } from '../interface/order.interface';
+import { OrderService } from '../../services/order.service';
+import { Order } from '../../interface/order.interface';
 
 @Component({
   selector: 'app-orders',
@@ -33,7 +33,6 @@ export class OrdersComponent {
   };
 
   public orders: Order[] = [];
-
   constructor(private _orderService: OrderService) { }
 
   ngOnInit() {
@@ -41,12 +40,11 @@ export class OrdersComponent {
   }
 
   // Get orders from a service
-  private getOrders() {
+  private getOrders(): void {
     this._orderService.getOrders().subscribe({
-      next: (orders: Order[]) => {
-        // Assign orders
-        this.orders = orders;
-      }
-    })
+      next: (orders: Order[]) => { this.orders = orders; },
+      error: (error: Error) => { console.error("Unable to retrieve data.", error) },
+      complete: () => { console.error("Completed.") }
+    });
   }
 }
