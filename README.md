@@ -1,7 +1,5 @@
 # Munch Dashboard
 
-A brief description or introduction to your project.
-
 ## Table of Contents
 
 - [Introduction](#introduction)
