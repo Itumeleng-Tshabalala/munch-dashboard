@@ -1,0 +1,45 @@
+.search-field {
+  border-radius: 0.5rem;
+  background: var(--surface-card);
+
+  /* 1dp — Elevation */
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.14),
+    0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  width: 100%; /* Adjust width as needed */
+
+  margin-bottom: 1rem;
+  outline: none;
+
+  --mdc-outlined-text-field-outline-width: 0;
+  --mdc-outlined-text-field-focus-outline-color: transparent;
+}
+
+.filter-section {
+  --mdc-checkbox-selected-icon-color: var(--side-nav-dark);
+  --mdc-checkbox-selected-focus-icon-color: var(--side-nav-dark);
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding-bottom: 1.5rem;
+  overflow-x: auto;
+
+  mat-checkbox {
+    min-width: 16rem;
+    border-radius: 0.5rem;
+    background: var(--surface-card, #fff);
+    padding: 0.5rem 1rem;
+
+    /* 1dp — Elevation */
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.14),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .check-title {
+    color: #000;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 0;
+  }
+}

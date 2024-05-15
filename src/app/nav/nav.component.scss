@@ -1,0 +1,46 @@
+:host {
+  --mdc-list-list-item-leading-icon-color: var(--label-text);
+  --mdc-list-list-item-label-text-color: var(--label-text);
+  --mdc-list-list-item-hover-leading-icon-color: var(--light-blue);
+  --mdc-list-list-item-hover-label-text-color: var(--light-blue);
+  --mdc-list-list-item-focus-leading-icon-color: var(--light-blue);
+  --mdc-list-list-item-focus-label-text-color: var(--light-blue);
+
+  .sidenav-container {
+    height: 100%;
+  }
+
+  .sidenav {
+    width: 19rem;
+    background: var(--side-nav-dark);
+  }
+
+  .sidenav .mat-toolbar {
+    background: var(--side-nav-light);
+    color: #fff;
+
+    /* 1dp — Elevation */
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.14),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-link.active {
+    --mdc-list-list-item-leading-icon-color: var(--light-blue);
+    --mdc-list-list-item-label-text-color: var(--light-blue);
+  }
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background: var(--surface-card);
+
+    /* 1dp — Elevation */
+    box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.14),
+      0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 3px 0px rgba(0, 0, 0, 0.2);
+  }
+}

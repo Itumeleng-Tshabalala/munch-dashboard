@@ -1,0 +1,114 @@
+{
+  "orders": [
+    {
+      "name": "Elon Tusk",
+      "shippingMethod": "Next Day Shipping",
+      "orderDate": "27th January 2020 9:24 PM EST",
+      "lastBrokered": "28th January 2020 2:32 AM EST",
+      "productCode": "BJ21-XL-LEATHER",
+      "productDescription": "Bomber Jacket",
+      "stockQuantity": 49,
+      "productVariant": "Leather XL",
+      "category": ["JACKETS"]
+    },
+    {
+      "name": "Jeff Mezos",
+      "shippingMethod": "Next Day Shipping",
+      "orderDate": "27th January 2020 9:24 PM EST",
+      "lastBrokered": "28th January 2020 2:32 AM EST",
+      "productCode": "BJ21-XL-LEATHER",
+      "productDescription": "Bomber Jacket",
+      "stockQuantity": 49,
+      "productVariant": "Leather XL",
+      "category": ["JACKETS"]
+    },
+    {
+      "name": "Mark Huckleburg",
+      "shippingMethod": "Next Day Shipping",
+      "orderDate": "27th January 2020 9:24 PM EST",
+      "lastBrokered": "28th January 2020 2:32 AM EST",
+      "productCode": "SPS26-SM-BLUE",
+      "productDescription": "Bomber Jacket",
+      "stockQuantity": 49,
+      "productVariant": "Blue SM",
+      "category": ["SWEATPANTS"]
+    },
+    {
+      "name": "Steve Wozniak",
+      "shippingMethod": "Standard Shipping",
+      "orderDate": "28th January 2020 11:55 AM EST",
+      "lastBrokered": "29th January 2020 4:20 PM EST",
+      "productCode": "SH11-LG-BLACK",
+      "productDescription": "Leather Shoes",
+      "stockQuantity": 25,
+      "productVariant": "Black LG",
+      "category": ["SHOES"]
+    },
+    {
+      "name": "Bill Gates",
+      "shippingMethod": "Standard Shipping",
+      "orderDate": "28th January 2020 3:10 PM EST",
+      "lastBrokered": "29th January 2020 8:05 PM EST",
+      "productCode": "TS15-MD-GRAY",
+      "productDescription": "T-Shirt",
+      "stockQuantity": 100,
+      "productVariant": "Gray MD",
+      "category": ["CLOTHING"]
+    },
+    {
+      "name": "Larry Page",
+      "shippingMethod": "Standard Shipping",
+      "orderDate": "29th January 2020 8:45 AM EST",
+      "lastBrokered": "30th January 2020 1:15 PM EST",
+      "productCode": "SG28-XL-NAVY",
+      "productDescription": "Sweatshirt",
+      "stockQuantity": 75,
+      "productVariant": "Navy XL",
+      "category": ["CLOTHING"]
+    },
+    {
+      "name": "Sundar Pichai",
+      "shippingMethod": "Next Day Shipping",
+      "orderDate": "30th January 2020 10:20 AM EST",
+      "lastBrokered": "31st January 2020 3:45 AM EST",
+      "productCode": "CP03-SM-BLACK",
+      "productDescription": "Cap",
+      "stockQuantity": 50,
+      "productVariant": "Black SM",
+      "category": ["ACCESSORIES"]
+    },
+    {
+      "name": "Tim Cook",
+      "shippingMethod": "Next Day Shipping",
+      "orderDate": "31st January 2020 1:30 PM EST",
+      "lastBrokered": "1st February 2020 6:55 AM EST",
+      "productCode": "SL07-MD-BROWN",
+      "productDescription": "Sunglasses",
+      "stockQuantity": 40,
+      "productVariant": "Brown MD",
+      "category": ["ACCESSORIES"]
+    },
+    {
+      "name": "Satya Nadella",
+      "shippingMethod": "Standard Shipping",
+      "orderDate": "1st February 2020 6:15 PM EST",
+      "lastBrokered": "2nd February 2020 11:30 PM EST",
+      "productCode": "BE18-LG-GREEN",
+      "productDescription": "Backpack",
+      "stockQuantity": 60,
+      "productVariant": "Green LG",
+      "category": ["ACCESSORIES"]
+    },
+    {
+      "name": "Jack Dorsey",
+      "shippingMethod": "Standard Shipping",
+      "orderDate": "2nd February 2020 9:40 AM EST",
+      "lastBrokered": "3rd February 2020 2:20 PM EST",
+      "productCode": "WD02-SM-BLUE",
+      "productDescription": "Watch",
+      "stockQuantity": 30,
+      "productVariant": "Blue SM",
+      "category": ["ACCESSORIES"]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+@import "./../../assets/styles/mixins.scss";
+
+:host {
+  display: block;
+  margin-bottom: 0.75rem;
+  mat-card {
+    background: var(--surface-card);
+    overflow: hidden;
+  }
+
+  --mdc-elevated-card-container-shape: 0.5rem;
+  ::ng-deep .mat-form-field-appearance-outline,
+  ::ng-deep .mat-form-field-outline {
+    border-width: 0;
+  }
+
+  .card-header {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    background: var(--surface-card);
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  @include tablet {
+    .card-header {
+      flex-direction: row;
+    }
+
+    .secondary-title {
+      text-align: right;
+    }
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    background: var(--surface-card);
+    border-top: 1px solid #e0e0e0;
+  }
+
+  .product-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1rem;
+  }
+
+  .product-details {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    p {
+      line-height: 0.1;
+    }
+
+    .p-code {
+      font-size: 0.625rem;
+      color: var(--text-secondary);
+    }
+  }
+
+  .label {
+    display: flex;
+    height: 1.9375rem;
+    padding: 0rem 0.875rem 0rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.22);
+    background: #e6efd5;
+    color: #666666;
+    gap: 0.5rem;
+  }
+}

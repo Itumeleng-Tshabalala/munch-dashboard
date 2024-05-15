@@ -1,0 +1,29 @@
+// mixins for mobile, tablet, desktop
+
+// mobile
+@mixin mobile {
+  @media (min-width: 200px) {
+    @content;
+  }
+}
+
+// tablet
+@mixin tablet {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+// desktop
+@mixin desktop {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}
+
+// usage
+// @include mobile {
+//   .sidenav {
+//     width: 19rem;
+//   }
+// }
