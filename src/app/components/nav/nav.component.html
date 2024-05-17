@@ -8,7 +8,7 @@
     [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="(isHandset$ | async) === false"
   >
-    <mat-toolbar> Munch Concepts </mat-toolbar>
+    <mat-toolbar routerLink="/">Munch Concepts</mat-toolbar>
     <mat-nav-list>
       @for (item of menus; track $index) {
       <a

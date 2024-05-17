@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Order } from '../interface/order.interface';
 import { environment } from '../../environments/environment';
@@ -14,7 +14,9 @@ export class OrderService {
   ) { }
 
   // Retrieve Orders
-  getOrders(): Observable<Order[]> {
-    return this.httpClient.get<Order[]>(`${environment.host}/orders`);
+  getOrders(search?: string): Observable<Order[]> {
+    if (search)
+      search = `?name=${search}`;
+    return this.httpClient.get<Order[]>(`${environment.host}/orders${search}`);
   }
 }

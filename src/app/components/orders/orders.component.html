@@ -1,27 +1,26 @@
 <div class="container">
-  <mat-form-field
-    class="search-field"
-    [appearance]="'outline'"
-    [subscriptSizing]="'dynamic'"
-  >
+  <mat-form-field class="search-field" [appearance]="'outline'" [subscriptSizing]="'dynamic'">
     <mat-icon matPrefix>search</mat-icon>
-    <input matInput type="text" placeholder="Search" />
+    <input matInput type="text" placeholder="Search" (keyup)="handleSearch($event)" />
   </mat-form-field>
 
-  <section class="filter-section">
-    <mat-checkbox [(ngModel)]="filter.sameDay">
+  @if (filterForm) {
+  <section class="filter-section" [formGroup]="filterForm">
+    <mat-checkbox formControlName="sameDay">
       <h3 class="check-title">Same day</h3>
       <p mat-card-subtitle>37 orders, 40 items</p>
     </mat-checkbox>
-    <mat-checkbox [(ngModel)]="filter.nextDay">
+    <mat-checkbox formControlName="nextDay">
       <h3 class="check-title">Next day</h3>
       <p mat-card-subtitle>37 orders, 40 items</p>
     </mat-checkbox>
-    <mat-checkbox [(ngModel)]="filter.nextWeek">
+    <mat-checkbox formControlName="nextWeek">
       <h3 class="check-title">Next week</h3>
       <p mat-card-subtitle>37 orders, 40 items</p>
     </mat-checkbox>
   </section>
+  }
+
 
   @for (item of orders; track $index) {
   <app-order [order]="item"> </app-order>
